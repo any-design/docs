@@ -1,0 +1,12 @@
+node_modules
+.history
+.DS_Store
+.vscode
+.vercel
+dist
+dist-ssr
+dist-testground
+lib
+/styles
+docs/.vitepress/dist
+docs/.vitepress/cache

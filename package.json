@@ -1,0 +1,20 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "Documentation site for AnyUI in vitepress.",
+  "author": "",
+  "type": "module",
+  "license": "none",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "@any-design/anyui": "^0.0.56"
+  },
+  "devDependencies": {
+    "sass": "^1.65.1",
+    "vitepress": "^1.0.0-rc.4"
+  }
+}
