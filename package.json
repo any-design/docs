@@ -10,11 +10,13 @@
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
-  "dependencies": {
-    "@any-design/anyui": "^0.0.56"
-  },
   "devDependencies": {
     "sass": "^1.65.1",
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-vue-components": "^0.25.1",
     "vitepress": "^1.0.0-rc.4"
+  },
+  "dependencies": {
+    "@any-design/anyui": "file:anyui"
   }
 }

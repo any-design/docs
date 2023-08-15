@@ -1,5 +1,61 @@
+$enable-prefer-query: false;
+$dark-theme-selector: ".dark";
+
+@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;display=swap);
+@import "@any-design/anyui/styles/index.scss";
+
+:root {
+  --vp-nav-bg-color: var(--bg);
+  --vp-nav-screen-bg-color: var(--bg);
+  --vp-c-brand-dark: var(--primary);
+  --vp-c-brand-light: var(--primary);
+  --container-shadow: var(--shadow-8);
+  --container-bg: transparent;
+}
+
 .dark {
-    div, span, p, a, input, textarea, pre {
-        color: var(--vp-c-text-1);
+  --container-shadow: var(--shadow-w);
+  --container-bg: var(bg-bright);
+}
+
+.VPHero {
+  .container {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    border-radius: 48px;
+    box-shadow: 4px 6px 40px var(--container-shadow);
+    background: var(--container-bg);
+
+    .image {
+      order: 1;
+      .VPImage {
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        transform: none;
+      }
     }
+    .main {
+      order: 2;
+    }
+    width: fit-content;
+    .name {
+      .clip {
+        background: linear-gradient(
+          90deg,
+          var(--primary),
+          var(--secondary) 30%,
+          var(--secondary) 100%
+        );
+
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 4px 4px 2px rgba(208, 225, 255, 0.2);
+      }
+    }
+  }
 }

@@ -10,3 +10,4 @@ lib
 /styles
 docs/.vitepress/dist
 docs/.vitepress/cache
+anyui
